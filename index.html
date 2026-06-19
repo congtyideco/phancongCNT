@@ -165,7 +165,7 @@
     font-weight: 500;
     letter-spacing: 0.5px;
   }
-  .strip .sep { color: rgba(255,255,255,0.4); }
+  .strip.sep { color: rgba(255,255,255,0.4); }
 
   /* MAIN */
   .container {
@@ -268,7 +268,7 @@
   }
   .person-info { z-index: 1; }
   .person-info h3 { color: #fff; font-size: 18px; font-weight: 700; }
-  .person-info .role { color: rgba(255,255,255,0.82); font-size: 12.5px; font-weight: 400; margin-top: 3px; }
+  .person-info.role { color: rgba(255,255,255,0.82); font-size: 12.5px; font-weight: 400; margin-top: 3px; }
   .person-badge {
     margin-left: auto;
     background: #fff;
@@ -315,10 +315,10 @@
     font-size: 12px; color: #fff;
   }
   .func-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-  .fl-red { color: var(--red-dark); } .fl-red i { background: var(--red); }
-  .fl-teal { color: var(--teal-dark); } .fl-teal i { background: var(--teal); }
-  .fl-blue { color: #1565C0; } .fl-blue i { background: var(--blue); }
-  .fl-purple { color: #6A1B9A; } .fl-purple i { background: var(--purple); }
+  .fl-red { color: var(--red-dark); }.fl-red i { background: var(--red); }
+  .fl-teal { color: var(--teal-dark); }.fl-teal i { background: var(--teal); }
+  .fl-blue { color: #1565C0; }.fl-blue i { background: var(--blue); }
+  .fl-purple { color: #6A1B9A; }.fl-purple i { background: var(--purple); }
 
   .duty-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
   .duty-list li {
@@ -342,10 +342,10 @@
     padding: 18px 22px;
     margin-top: 18px;
   }
-  .authority-box .func-label { color: #E65100; margin-bottom: 12px; }
-  .authority-box .func-label i { background: var(--gold); }
-  .authority-box .func-label::after { background: #FFCC80; }
-  .authority-box .duty-list li i { color: var(--gold); }
+  .authority-box.func-label { color: #E65100; margin-bottom: 12px; }
+  .authority-box.func-label i { background: var(--gold); }
+  .authority-box.func-label::after { background: #FFCC80; }
+  .authority-box.duty-list li i { color: var(--gold); }
 
   .duties-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
 
@@ -371,14 +371,14 @@
     transition: transform 0.4s;
   }
   .team-photo-card:hover img { transform: scale(1.05); }
-  .team-photo-card .photo-caption {
+  .team-photo-card.photo-caption {
     position: absolute; bottom: 0; left: 0; right: 0;
     background: linear-gradient(transparent, rgba(198,40,40,0.9));
     padding: 24px 18px 13px;
     color: #fff; font-size: 12.5px; font-weight: 500;
     display: flex; align-items: center; gap: 8px;
   }
-  .team-photo-card .photo-caption i { color: #FFE082; }
+  .team-photo-card.photo-caption i { color: #FFE082; }
 
   /* FOOTER */
   .footer-section {
@@ -415,7 +415,7 @@
     .duties-grid { grid-template-columns: 1fr; gap: 9px; }
     .team-section { grid-template-columns: 1fr; }
     .strip { flex-direction: column; gap: 4px; padding: 10px 16px; }
-    .strip .sep { display: none; }
+    .strip.sep { display: none; }
   }
 </style>
 </head>
@@ -483,23 +483,21 @@
       <div class="func-section">
         <div class="func-label fl-red"><i class="fa-solid fa-list-check"></i> A. Chức năng phụ trách</div>
         <ul class="duty-list dl-red">
-          <li><i class="fa-solid fa-check"></i> Phụ trách khách hàng kênh truyền thống (nhà thuốc, chuỗi NT Cẩm Ân, Công ty dược, đại lý mỹ phẩm ) – chăm sóc, quản lý và phát triển doanh thu &amp; sản lượng theo mục tiêu định kỳ.</li>
-          <li><i class="fa-solid fa-check"></i> Tham gia phát triển tất cả khách hàng kênh truyền thống mới – đóng góp phát triển chung khách hàng và doanh thu ( VỚI SỰ TRỢ GIÚP TỪ MS HUYỀN).</li>
+          <li><i class="fa-solid fa-check"></i> Phụ trách khách hàng kênh truyền thống (nhà thuốc, chuỗi NT Cẩm Ân, Công ty dược, đại lý mỹ phẩm) – chăm sóc, quản lý và phát triển doanh thu &amp; sản lượng theo mục tiêu định kỳ.</li>
+          <li><i class="fa-solid fa-check"></i> Tham gia phát triển tất cả khách hàng kênh truyền thống mới – đóng góp phát triển chung khách hàng và doanh thu (VỚI SỰ TRỢ GIÚP TỪ MS HUYỀN).</li>
           <li><i class="fa-solid fa-check"></i> Phụ trách chào sản phẩm mới cho chuỗi NT các loại (Long Châu, An Khang, Pharmacity, Chuỗi Nhà Thuốc Khác) theo chỉ đạo Ban Giám đốc -báo cáo giám đốc.</li>
-		  <li><i class="fa-solid fa-check"></i> Được phép làm việc trực tiếp với nhà cung cấp để nắm thông tin tình trạng hàng hóa thuốc cung cấp , đáp ứng chủ động xử lý giao dịch cho khách hàng ( c/c cập nhật BGĐ/Kế toán)</li>
+		 <li><i class="fa-solid fa-check"></i> Được phép làm việc trực tiếp với nhà cung cấp để nắm thông tin tình trạng hàng hóa thuốc cung cấp, đáp ứng chủ động xử lý giao dịch cho khách hàng (c/c cập nhật BGĐ/Kế toán)</li>
         </ul>
       </div>
       <div class="func-section">
         <div class="func-label fl-teal"><i class="fa-solid fa-lightbulb"></i> B. Cố vấn phát triển chuỗi NT lớn - khách hàng khác cho kinh doanh</div>
         <div class="duties-grid">
           <ul class="duty-list">
-            <li><i class="fa-solid fa-check"></i> Tham gia tư vấn ,  góp ý nếu có cho công tác điều phối chuỗi NT cho kinh doanh .</li>
-            <li><i class="fa-solid fa-check">Các công việc đang thu lý giới thiệu sản phẩm mời thời gian qua vẫn theo dõi đến khi dự án kết thúc và chuyển giao theo phân công.</i> </li>
-            <li><i class="fa-solid fa-check"></i>   </li>
+            <li><i class="fa-solid fa-check"></i> Tham gia tư vấn, góp ý (nếu có) cho công tác điều phối chuỗi NT cho kinh doanh.</li>
+            <li><i class="fa-solid fa-check"></i> Các công việc đang thụ lý, giới thiệu sản phẩm mời thời gian qua vẫn theo dõi đến khi dự án kết thúc và chuyển giao theo phân công.</li>
           </ul>
           <ul class="duty-list">
-          
-            <li><i class="fa-solid fa-circle-info"></i> <strong>Phạm vi:</strong> KHÔNG THAM GIA TRỰC TIẾP CÔNG TÁC ĐIỀU PHỐI HOẠT ĐỘNG CHUỖI NT LONG CHÂU -PHARMACITY - AN KHANG </li>
+            <li><i class="fa-solid fa-circle-info"></i> <strong>Phạm vi:</strong> KHÔNG THAM GIA TRỰC TIẾP CÔNG TÁC ĐIỀU PHỐI HOẠT ĐỘNG CHUỖI NT LONG CHÂU - PHARMACITY - AN KHANG.</li>
           </ul>
         </div>
       </div>
@@ -509,7 +507,7 @@
   <!-- II: HOÀI -->
   <div class="section-title">
     <div class="section-number sn-teal">II</div>
-    <h2>Phân công đối với Ms. Thương Hoài ( Quản lý kế toán - kho vận)</h2>
+    <h2>Phân công đối với Ms. Thương Hoài (Quản lý kế toán - kho vận)</h2>
   </div>
   <div class="person-card">
     <div class="person-header ph-teal">
@@ -532,12 +530,12 @@
         <div class="duties-grid">
           <ul class="duty-list">
             <li><i class="fa-solid fa-check"></i> Hỗ trợ Ban Giám đốc quản lý, điều phối và giám sát hoạt động kinh doanh các chuỗi nhà thuốc lớn.</li>
-		    <li><i class="fa-solid fa-check"></i> Được phân quyền DUYỆT các đơn hàng chuỗi NT ( Long Châu, Pharmacity , An Khang) có giá trị đơn hàng dưới 400 triêu đồng thay giám đốc trong thời gian phân công ngoài trừ khách hàng do Ms Hương thụ lý.</li>
+		 <li><i class="fa-solid fa-check"></i> Được phân quyền DUYỆT các đơn hàng chuỗi NT (Long Châu, Pharmacity, An Khang) có giá trị đơn hàng dưới 400 triêu đồng thay giám đốc trong thời gian phân công ngoài trừ khách hàng do Ms Hương thụ lý.</li>
             <li><i class="fa-solid fa-check"></i> Được phân công bấm duyệt các đơn hàng có giá trị dưới 16 triệu đồng cho các bạn kinh doanh thay Ban giám đốc, Đơn hàng từ 17 triệu đồng - 50 triệu đồng do Ms Khánh - giám đốc chi nhánh duyệt</li>
             <li><i class="fa-solid fa-check"></i> Quyền được dừng đơn hàng giao nếu công nợ giao khách hàng quá hạn 20 ngày không thanh toán</li>
           </ul>
           <ul class="duty-list">
-            <li><i class="fa-solid fa-check"></i> Tham gia thụ lý, xử lý nội dung hợp đồng kinh tế, hợp đồng mua bán phát sinh với khách hàng và trình duyền Ban giám đốc .</li>
+            <li><i class="fa-solid fa-check"></i> Tham gia thụ lý, xử lý nội dung hợp đồng kinh tế, hợp đồng mua bán phát sinh với khách hàng và trình duyền Ban giám đốc.</li>
             <li><i class="fa-solid fa-check"></i> Hỗ trợ Ban Giám đốc làm việc với nhà cung cấp và khách hàng trong cung cấp thông tin sản phẩm, hồ sơ pháp lý và tài liệu liên quan.</li>
           </ul>
         </div>
@@ -572,10 +570,10 @@
           <ul class="duty-list dl-blue">
             <li><i class="fa-solid fa-check"></i> Chịu trách nhiệm chính phát triển kinh doanh, thúc đẩy doanh số và hoàn thành chỉ tiêu được giao cho chuỗi Long Châu.</li>
    			 <li><i class="fa-solid fa-check"></i>Phụ trách lập đơn hàng- xác nhận đơn hàng và điều phối đơn hàng trong thời gian giao dịch đến khi hoàn thành giao thành công.</li>
-			  <li><i class="fa-solid fa-check"></i> Là đầu mối chính điều phối toàn bộ hoạt động bán hàng với chuỗi Long Châu trong giao dịch với khách hàng.</li>
-            <li><i class="fa-solid fa-check"></i> Phối hợp cùng Ms. Hương trong chào bán và phát triển sản phẩm mới vào hệ thống chuỗi Nhà Thuốc .</li>
+			 <li><i class="fa-solid fa-check"></i> Là đầu mối chính điều phối toàn bộ hoạt động bán hàng với chuỗi Long Châu trong giao dịch với khách hàng.</li>
+            <li><i class="fa-solid fa-check"></i> Phối hợp cùng Ms. Hương trong chào bán và phát triển sản phẩm mới vào hệ thống chuỗi Nhà Thuốc.</li>
             <li><i class="fa-solid fa-check"></i> Theo dõi, giám sát toàn bộ quy trình đơn hàng từ tiếp nhận, xử lý đến giao hàng thành công.</li>
-            <li><i class="fa-solid fa-check"></i> Dự báo nhu cầu, kế hoạch cung ứng,  trách nhiệm điều phối hàng hóa cung cứng theo yêu cầu khách hàng .</li>
+            <li><i class="fa-solid fa-check"></i> Dự báo nhu cầu, kế hoạch cung ứng, trách nhiệm điều phối hàng hóa cung cứng theo yêu cầu khách hàng.</li>
           </ul>
           <ul class="duty-list dl-blue">
             <li><i class="fa-solid fa-check"></i> Tổng hợp, phân tích và báo cáo kết quả kinh doanh định kỳ hoặc theo yêu cầu.</li>
@@ -592,9 +590,9 @@
           <li><i class="fa-solid fa-check"></i> Đề xuất tạm dừng xử lý đơn hàng khi vượt hạn mức công nợ hoặc vi phạm điều khoản hợp tác.</li>
           <li><i class="fa-solid fa-check"></i> Được cấp phát hàng mẫu phục vụ phát triển kinh doanh theo quy định công ty.</li>
           <li><i class="fa-solid fa-check"></i> Có quyền yêu cầu và đôn đốc các bộ phận liên quan phối hợp xử lý công việc phát sinh.</li>
-		      <li><i class="fa-solid fa-check"></i> Đánh giá - góp ý hoạt động chung của đội nhóm trong việc triển khai hoạt động bán hàng với khách hàng </li>
-		    <li><i class="fa-solid fa-check"></i> Được can thiệp trao đổi với đội nhóm nhà cung cấp trong việc xử lý hàng hóa cho khách hàng có thông qua c/c quản lý Kế toán- Kho vận </li>
-		  
+		 <li><i class="fa-solid fa-check"></i> Đánh giá - góp ý hoạt động chung của đội nhóm trong việc triển khai hoạt động bán hàng với khách hàng </li>
+		 <li><i class="fa-solid fa-check"></i> Được can thiệp trao đổi với đội nhóm nhà cung cấp trong việc xử lý hàng hóa cho khách hàng có thông qua c/c quản lý Kế toán- Kho vận </li>
+		 
         </ul>
       </div>
     </div>
@@ -610,7 +608,7 @@
       <div class="person-avatar">T</div>
       <div class="person-info">
         <h3>Ms. Ngọc Thắm -Phụ trách kinh doanh</h3>
-        <div class="role">Chuyên viên Kinh doanh &amp; Điều phối Chuỗi Pharmacity ( UVS)  – An Khang- BHealthcare </div>
+        <div class="role">Chuyên viên Kinh doanh &amp; Điều phối Chuỗi Pharmacity (UVS) – An Khang- BHealthcare </div>
       </div>
       <div class="person-badge pb-purple"><i class="fa-solid fa-store"></i> Pharmacity · An Khang</div>
     </div>
@@ -618,7 +616,7 @@
       <div class="scope-tags">
         <span class="scope-tag st-purple"><i class="fa-solid fa-store"></i> Chuỗi Pharmacity</span>
         <span class="scope-tag st-blue"><i class="fa-solid fa-store"></i> Chuỗi An Khang</span>
-        <span class="scope-tag st-red"><i class="fa-solid fa-pills"></i> </span>
+        <span class="scope-tag st-red"><i class="fa-solid fa-pills"></i> Nhóm hàng Thuốc</span>
         <span class="scope-tag st-teal"><i class="fa-solid fa-basket-shopping"></i> Hàng không phải Thuốc</span>
 		 <span class="scope-tag st-teal"><i class="fa-solid fa-basket-shopping"></i> Xúc tiến chào hàng mới với sự hỗ trợ cho Ms Hương </span>
       </div>
@@ -628,7 +626,7 @@
           <ul class="duty-list dl-purple">
             <li><i class="fa-solid fa-check"></i> Chịu trách nhiệm phát triển kinh doanh, thúc đẩy doanh số và hoàn thành chỉ tiêu được giao.</li>
           	 <li><i class="fa-solid fa-check"></i>Phụ trách lập đơn hàng- xác nhận đơn hàng và điều phối đơn hàng trong thời gian giao dịch đến khi hoàn thành giao thành công.</li>
-			  <li><i class="fa-solid fa-check"></i> Là tạm phụ trách  chính điều phối hoạt động bán hàng với hệ thống Pharmacity  ( nhóm không phải thuốc)  và An Khang -NT BHealth care .</li>
+			 <li><i class="fa-solid fa-check"></i> Là tạm phụ trách chính điều phối hoạt động bán hàng với hệ thống Pharmacity (nhóm không phải thuốc) và An Khang -NT BHealth care.</li>
             <li><i class="fa-solid fa-check"></i> Phối hợp cùng Ms. Hương trong phát triển và đưa sản phẩm mới vào chuỗi.</li>
             <li><i class="fa-solid fa-check"></i> Theo dõi và giám sát toàn bộ quá trình thực hiện đơn hàng.</li>
             <li><i class="fa-solid fa-check"></i> Lập kế hoạch dự báo nhu cầu, phối hợp cung ứng đảm bảo nguồn hàng ổn định.</li>
@@ -648,8 +646,8 @@
          <li><i class="fa-solid fa-check"></i> Đề xuất tạm dừng xử lý đơn hàng khi vượt hạn mức công nợ hoặc vi phạm điều khoản hợp tác.</li>
           <li><i class="fa-solid fa-check"></i> Được cấp phát hàng mẫu phục vụ phát triển kinh doanh theo quy định công ty.</li>
           <li><i class="fa-solid fa-check"></i> Có quyền yêu cầu và đôn đốc các bộ phận liên quan phối hợp xử lý công việc phát sinh.</li>
-		      <li><i class="fa-solid fa-check"></i> Đánh giá - góp ý hoạt động chung của đội nhóm trong việc triển khai hoạt động bán hàng với khách hàng </li>
-		    <li><i class="fa-solid fa-check"></i> Được can thiệp trao đổi với đội nhóm nhà cung cấp trong việc xử lý hàng hóa cho khách hàng có thông qua c/c quản lý Kế toán- Kho vận </li>
+		 <li><i class="fa-solid fa-check"></i> Đánh giá - góp ý hoạt động chung của đội nhóm trong việc triển khai hoạt động bán hàng với khách hàng </li>
+		 <li><i class="fa-solid fa-check"></i> Được can thiệp trao đổi với đội nhóm nhà cung cấp trong việc xử lý hàng hóa cho khách hàng có thông qua c/c quản lý Kế toán- Kho vận </li>
         </ul>
       </div>
     </div>
